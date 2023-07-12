@@ -1,0 +1,450 @@
+:root {
+    --primaryColor: #000000;
+    --secondaryColor: #cc00ff;
+    --secondaryColor2: #fffbe5;
+    --fontColor: #222;
+    --whiteColor: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: auto;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--primaryColor);
+    border-bottom-color: 2px solid #f5f5f5;
+    z-index: 99;
+}
+
+/*will use burger btn for mobile view*/
+.burger-btn {
+    display: none;
+}
+
+.logo {
+    color: var(--whiteColor);
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 1;
+}
+
+.nav-menus a {
+    color: var(--whiteColor);
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.nav-menus a:hover {
+    text-decoration: underline;
+}
+
+.btn-login {
+    border: 2px solid var(--secondaryColor);
+    background-color: var(--secondaryColor);
+    border-radius: 24px;
+    color: var(--fontColor);
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: transparent;
+    color: var(--whiteColor);
+}
+
+header {
+    width: 100%;
+    min-height: 100%;
+    background-color: var(--primaryColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--whiteColor);
+    margin-top: 50px;
+    padding: 5% 2%;
+}
+
+.header-title {
+    font-size: 56px;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 2;
+}
+
+.header-desc {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.header-btn1, .header-btn2 {
+    padding: 5px 15px;
+    margin: 3px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.header-btn1 {
+    background-color: var(--secondaryColor);
+    border: 2px solid var(--secondaryColor);
+    color: var(--fontColor);
+    z-index: 2;
+}
+
+.header-btn2 {
+    background-color: transparent;
+    border: 2px solid var(--secondaryColor);
+    color: var(--whiteColor);
+    z-index: 2;
+}
+
+.header-btn1:hover, .header-btn2:hover {
+    box-shadow: rgba(157, 157, 157, 0.35) 0px 5px 15px;
+}
+
+.header-video {
+    width: 70%;
+    padding-top: 50px;
+    min-width: 300px;
+    z-index: 2;
+}
+
+.header-background1 {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: 20%;
+}
+
+.header-background2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    width: 20%;
+}
+
+.category {
+    width: 100%;
+    min-height: 400px;
+    padding: 3% 5%;
+    background-color: var(--secondaryColor);
+}
+
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    line-height: 1.5;
+    letter-spacing: 1;
+    font-size: 40px;
+}
+
+.more {
+    text-decoration: none;
+    color: var(--fontColor);
+    font-size: 13px;
+}
+
+.more:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.category-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 3%;
+}
+
+.category-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--whiteColor);
+    padding: 2% 1%;
+    border-radius: 16px;
+    max-width: 200px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 3%;
+    font-size: 18px;
+}
+
+.category-card:hover {
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.category-card img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.about {
+    width: 100%;
+    height: auto;
+    padding: 3% 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    gap: 1rem;
+    background-color: var(--secondaryColor2);
+}
+
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-wrapper p {
+    line-height: 1.5;
+}
+
+.about-features {
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    text-align: center;
+    gap: 5rem;
+}
+
+.about-card {
+    text-align: left;
+}
+
+.about img {
+    width: 50%;
+}
+
+.clients {
+    background-color: var(--secondaryColor2);
+    padding: 5%;
+}
+
+.clients-wrapper {
+    width: 100%;
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 24px;
+}
+
+.clients-detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.clients-detail button {
+    background-color: var(--secondaryColor);
+    color: var(--fontColor);
+    width: 50%;
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+    border: 2px solid var(--secondaryColor);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.clients-detail button:hover {
+    background-color: transparent;
+    color: var(--secondaryColor);
+}
+
+.clients-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.clients-box {
+    padding: 6%;
+    display: flex;
+    cursor: pointer;
+}
+
+.clients-box img {
+    width: 100px;
+}
+
+.white {
+    background-color: var(--whiteColor);
+}
+
+.yellow {
+    background-color: var(--secondaryColor);
+}
+
+.newsletter {
+    width: 100%;
+    height: auto;
+    padding: 5% 5% 2% 5%;
+    background-color: var(--secondaryColor);
+    color: var(--fontColor);
+}
+
+.newsletter-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 1rem;
+}
+
+.newsletter-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-img {
+    height: 60%;
+    width: 60%;
+    justify-content: center;
+}
+
+.newsletter-card form {
+    width: 100%;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.newsletter-form input {
+    width: 100%;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid var(--fontColor);
+}
+
+.newsletter-button {
+    float: right;
+    background-color: var(--fontColor);
+    color: var(--whiteColor);
+    padding: 0.5rem 2rem;
+    border: 2px solid var(--fontColor);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.newsletter-button:hover {
+    background-color: transparent;
+    color: var(--fontColor);
+}
+
+.footer {
+    width: 100%;
+    padding: 5% 3% 3% 3%;
+    background-color: var(--whiteColor);
+}
+
+.footer-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.footer-card {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+
+.footer-card h1 {
+    margin-bottom: 10px;
+    color: var(--primaryColor);
+}
+
+.footer-card a {
+    text-decoration: none;
+    color: var(--primaryColor);
+    font-size: 0.9rem;
+    padding: 3px 0;
+}
+
+.footer-card a:hover {
+    text-decoration: underline;
+    color: var(--primaryColor);
+}
+
+.divider {
+    border: none;
+    background: var(--fontColor);
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 640px) {
+    .burger-btn {
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        background-color: var(--primaryColor);
+        display: none;
+        padding: 5rem 0;
+        box-shadow: rgba(0,0,0,0.24)0px 3px 8px;
+    }
+
+    .nav-menus.active {
+        display: flex;
+    }
+
+    .nav-menus a {
+        color: var(--whiteColor);
+        padding: 1.5rem 0;
+        display: none;
+    }
+
+    .header-title {
+        font-size: 32px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+}
